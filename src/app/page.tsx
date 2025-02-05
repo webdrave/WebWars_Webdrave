@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 import BentoGridSecondDemo from "../components/bentoDemo";
+import ScrollBaseAnimation from "@/components/ui/ScrollBaseAnimation";
 
 export default function Home() {
   return (
@@ -51,6 +52,15 @@ export default function Home() {
           </div>
         </div>
         <BentoGridSecondDemo />
+        <ScrollBaseAnimation children="25th December, 2024 : Abstract Submission Date   -    5th January, 2025 : Full Paper Submission Date      -      28th February, 2025:Notification of Acceptance" baseVelocity={-1} scrollDependent/>
+        <section className="bg-white py-16">
+          <div className="container mx-auto px-4 py-16 flex flex-col items-center">
+            <h2 className="text-3xl font-bold mb-4">
+              ICCSAI 2025 - 2025 Third International Conference on Communication,
+              Security, and Artificial Intelligence
+            </h2>
+          </div>
+        </section>
       </main>
     </div>
   );
