@@ -37,8 +37,6 @@ export default function FloatingNav() {
   return (
     <div className="fixed top-4 left-4 right-4 z-[5000] flex justify-center">
       <nav className="flex items-center justify-between p-4 border border-white/20 rounded-full shadow-lg max-w-5xl w-full backdrop-blur-lg bg-white/10 dark:bg-black/10">
-        
-        {/* Rotating Logo */}
         <div className="flex items-center space-x-4">
           <AnimatePresence mode="wait">
             <motion.div
@@ -51,9 +49,9 @@ export default function FloatingNav() {
               <Image
                 src={logos[currentLogo].src}
                 alt={logos[currentLogo].alt}
-                width={50} // Ensure that the logo has a decent resolution
-                height={50} // Maintain aspect ratio
-                className="h-8 w-auto object-fill" // Maintain aspect ratio and prevent blur
+                width={500} 
+                height={500}
+                className="h-8 w-auto object-fill" 
               />
             </motion.div>
           </AnimatePresence>

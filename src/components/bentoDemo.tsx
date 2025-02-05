@@ -10,6 +10,8 @@ import {
 
 export function BentoGridSecondDemo() {
   return (
+    <section className="h-screen">
+
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
@@ -22,6 +24,7 @@ export function BentoGridSecondDemo() {
         />
       ))}
     </BentoGrid>
+    </section>
   );
 }
 const Skeleton = () => (
