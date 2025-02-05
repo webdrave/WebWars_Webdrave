@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #F2F3F2;
 }
 
 .bgkeliye {
@@ -15,7 +16,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+/* 
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -70,7 +71,7 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
+} */
 
 @layer base {
   * {

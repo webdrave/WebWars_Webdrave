@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <main>
-        <div className="h-screen w-full bg-[#f5f5f5] bgkeliye relative overflow-hidden">
+        <div className="h-screen w-full bgkeliye relative overflow-hidden">
           <div className="container mx-auto px-4 py-16 flex flex-col mt-10 lg:mt-24 lg:flex-row items-center gap-8">
             <div className="lg:w-1/2 text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#222222]">
