@@ -16,6 +16,15 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bgkeliye {
+  background-image: url(/bg/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
