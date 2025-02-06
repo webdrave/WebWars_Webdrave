@@ -9,7 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Search, X } from "lucide-react";
+import { Search } from "lucide-react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 
 const topics = [
