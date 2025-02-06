@@ -23,7 +23,8 @@ export default function FloatingNav() {
       setCurrentLogo((prev) => (prev + 1) % logos.length);
     }, 2000);
     return () => clearInterval(timer);
-  }, []);
+  }, [logos.length]); // ✅ Add 'logos.length' as a dependency
+  
 
   const navItems = [
     { name: "Home", link: "/" },
