@@ -30,8 +30,6 @@ const items = [
     className: "md:col-span-1 md:row-span-2",
   },
   {
-    title: "CO",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
     header: <Skeleton />,
     className: "md:col-span-2 md:row-span-3",
   },
