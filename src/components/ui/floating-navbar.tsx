@@ -4,16 +4,19 @@ import Link from "next/link"
 import Image from "next/image"
 import { JSX } from "react"
 
+// ✅ Define an explicit type for `navItems`
+interface NavItem {
+  name: string
+  link: string
+  icon?: JSX.Element
+}
+
 export const FloatingNav = ({
   navItems,
   className,
   logo,
 }: {
-  navItems: {
-    name: string
-    link: string
-    icon?: JSX.Element
-  }[]
+  navItems: NavItem[]
   className?: string
   logo?: string
 }) => {
@@ -26,16 +29,15 @@ export const FloatingNav = ({
         )}
       >
         <div className="flex items-center">
-          {logo && <Image src={logo || "/placeholder.svg"} alt="Logo" width={32} height={32} className="mr-4" />}
+          {logo && <Image src={logo} alt="Logo" width={32} height={32} className="mr-4" />}
           <div className="hidden md:flex space-x-4">
-            {navItems.map((navItem: any, idx: number) => (
+            {navItems.map((navItem, idx) => (
               <Link
                 key={`link-${idx}`}
                 href={navItem.link}
-                className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500",
-                )}
+                className="relative dark:text-neutral-50 flex items-center space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
               >
+                {navItem.icon && <span className="mr-2">{navItem.icon}</span>}
                 <span className="text-sm">{navItem.name}</span>
               </Link>
             ))}
@@ -43,13 +45,11 @@ export const FloatingNav = ({
         </div>
         <div className="flex items-center space-x-4">
           <div className="md:hidden flex space-x-2">
-            {navItems.map((navItem: any, idx: number) => (
+            {navItems.map((navItem, idx) => (
               <Link
                 key={`icon-link-${idx}`}
                 href={navItem.link}
-                className={cn(
-                  "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 p-2",
-                )}
+                className="relative dark:text-neutral-50 flex items-center space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 p-2"
               >
                 {navItem.icon}
               </Link>
@@ -64,4 +64,3 @@ export const FloatingNav = ({
     </div>
   )
 }
-
