@@ -65,8 +65,8 @@ export default function FloatingNav() {
               href={navItem.link}
               className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
                 navItem.special
-                  ? "bg-red-600 text-white hover:bg-red-700"
-                  : "text-black hover:text-gray-700"
+                  ? "bg-[#222222] text-white hover:bg-[#212121]"
+                  : "text-[#222222] hover:text-gray-700"
               }`}
             >
               {navItem.name}

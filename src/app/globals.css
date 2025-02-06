@@ -16,6 +16,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.cnfBox {
+  border-radius: 50px;
+background: #dcdbdb;
+box-shadow: inset -25px 25px 50px #bbbaba,
+            inset 25px -25px 50px #fdfcfc;
+}
+
+.hideScroll::-webkit-scrollbar{
+  display: none;
+}
 /* 
 @layer base {
   :root {
