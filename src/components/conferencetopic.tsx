@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -92,6 +91,7 @@ export default function ConferenceTopics() {
   const [modalSearchQuery, setModalSearchQuery] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const containerRef = useRef(null);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   const filteredTopics = topics.filter((topic) =>
     topic.toLowerCase().includes(searchQuery.toLowerCase())
@@ -99,12 +99,29 @@ export default function ConferenceTopics() {
   const modalFilteredTopics = topics.filter((topic) =>
     topic.toLowerCase().includes(modalSearchQuery.toLowerCase())
   );
-  const visibleTopics = filteredTopics.slice(0, 12);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
   });
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth < 640) {
+        setVisibleCount(4); // Mobile
+      } else if (window.innerWidth < 1024) {
+        setVisibleCount(8); // Tablet
+      } else {
+        setVisibleCount(12); // Laptop
+      }
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
+  const visibleTopics = filteredTopics.slice(0, visibleCount);
+
 
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.9, 1], [0, 1, 1, 0]);
   const scale = useTransform(
