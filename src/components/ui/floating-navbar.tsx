@@ -1,14 +1,14 @@
-"use client"
-import { cn } from "@/lib/utils"
-import Link from "next/link"
-import Image from "next/image"
-import { JSX } from "react"
+"use client";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import Image from "next/image";
+import { JSX } from "react";
 
 // ✅ Define an explicit type for `navItems`
 interface NavItem {
-  name: string
-  link: string
-  icon?: JSX.Element
+  name: string;
+  link: string;
+  icon?: JSX.Element;
 }
 
 export const FloatingNav = ({
@@ -16,20 +16,28 @@ export const FloatingNav = ({
   className,
   logo,
 }: {
-  navItems: NavItem[]
-  className?: string
-  logo?: string
+  navItems: NavItem[];
+  className?: string;
+  logo?: string;
 }) => {
   return (
     <div className="fixed top-4 left-4 right-4 z-[5000] flex justify-center">
       <nav
         className={cn(
           "flex items-center justify-between p-4 bg-white dark:bg-black border border-neutral-200 dark:border-white/[0.2] rounded-full shadow-lg max-w-3xl w-full",
-          className,
+          className
         )}
       >
         <div className="flex items-center">
-          {logo && <Image src={logo} alt="Logo" width={32} height={32} className="mr-4" />}
+          {logo && (
+            <Image
+              src={logo}
+              alt="Logo"
+              width={32}
+              height={32}
+              className="mr-4"
+            />
+          )}
           <div className="hidden md:flex space-x-4">
             {navItems.map((navItem, idx) => (
               <Link
@@ -62,5 +70,5 @@ export const FloatingNav = ({
         </div>
       </nav>
     </div>
-  )
-}
+  );
+};
