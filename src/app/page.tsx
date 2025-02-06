@@ -3,10 +3,11 @@ import Image from "next/image";
 
 import BentoGridSecondDemo from "../components/bentoDemo";
 import ScrollBaseAnimation from "@/components/ui/ScrollBaseAnimation";
+import ConferenceTopics from "@/components/conferencetopic";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       <main>
         <div className="h-screen w-full bgkeliye relative overflow-hidden">
           <div className="container mx-auto px-4 py-16 flex flex-col mt-10 lg:mt-24 lg:flex-row items-center gap-8">
@@ -53,18 +54,17 @@ export default function Home() {
         </div>
         <BentoGridSecondDemo />
         <ScrollBaseAnimation baseVelocity={-1} scrollDependent>
-          25th December, 2024 : Abstract Submission Date - 5th January, 2025 :
-          Full Paper Submission Date - 28th February, 2025: Notification of
+          <div className="flex justify-center items-center gap-14">
+
+        <span className="text-sm">⚫  </span> 25th December, 2024 : Abstract Submission Date <span className="text-sm">⚫  </span> 5th January, 2025 :
+          Full Paper Submission Date <span className="text-sm">⚫  </span> 28th February, 2025: Notification of
           Acceptance
+          </div>
+
         </ScrollBaseAnimation>
 
-        <section className="bg-white py-16">
-          <div className="container mx-auto px-4 py-16 flex flex-col items-center">
-            <h2 className="text-3xl font-bold mb-4">
-              ICCSAI 2025 - 2025 Third International Conference on
-              Communication, Security, and Artificial Intelligence
-            </h2>
-          </div>
+        <section className="py-16">
+          <ConferenceTopics />
         </section>
       </main>
     </div>
