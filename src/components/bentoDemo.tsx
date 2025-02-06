@@ -1,12 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
-import {
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
+
 
 export function BentoGridSecondDemo() {
   return (
@@ -18,7 +13,6 @@ export function BentoGridSecondDemo() {
           description={item.description}
           header={item.header}
           className={item.className}
-          icon={item.icon}
         />
       ))}
     </BentoGrid>
@@ -29,33 +23,32 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
+    title: "ABOUT GALGOTIAS UNIVERSITY",
+    description: "Galgotias University hosts over 35,000 students across 100+ undergraduate and postgraduate programs. Renowned for excellence in teaching, research, and innovation, the university is committed to nurturing leaders who make a global impact. Hosting ICCSAI-2025 reinforces this mission by fostering Knowledge exchange and innovation.",
+    className: "md:col-span-1",
+  
+  },
+  {
+    title: "CO",
     description: "Explore the birth of groundbreaking ideas and inventions.",
     header: <Skeleton />,
     className: "md:col-span-2",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
+    title: "CONFERENCE OBJECTIVE",
+    description: "ICCSAI-2025 is a non-profit international conference designed to advance knowledge in Computer & Communication Engineering. With multiple tracks covering diverse topics in computing, communication, information security, and artificial intelligence, the conference fosters global collaboration and sets new directions in research.",
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "The Power of Communication",
+    title: "EVENT HIGHLIGHTS",
     description:
-      "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
+    <>
+    <p>Global Gathering: A prestigious event bringing together global researchers, academics, and industry professionals. </p>
+    <p>Focus Areas: Discussing advancements in Communication, Security, and Artificial Intelligence.</p>
+    </>,
+    
+
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
 ];
 
