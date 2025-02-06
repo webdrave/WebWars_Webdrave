@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
@@ -24,7 +24,6 @@ export default function FloatingNav() {
     }, 2000);
     return () => clearInterval(timer);
   }, [logos.length]); // ✅ Add 'logos.length' as a dependency
-  
 
   const navItems = [
     { name: "Home", link: "/" },
@@ -50,9 +49,9 @@ export default function FloatingNav() {
               <Image
                 src={logos[currentLogo].src}
                 alt={logos[currentLogo].alt}
-                width={500} 
+                width={500}
                 height={500}
-                className="h-8 w-auto object-fill" 
+                className="h-8 w-auto object-fill"
               />
             </motion.div>
           </AnimatePresence>
@@ -81,7 +80,8 @@ export default function FloatingNav() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white focus:outline-none"
           >
-            <span className="material-icons text-black">menu</span> {/* You can replace this with your preferred icon */}
+            <span className="material-icons text-black">menu</span>{" "}
+            {/* You can replace this with your preferred icon */}
           </button>
         </div>
       </nav>
