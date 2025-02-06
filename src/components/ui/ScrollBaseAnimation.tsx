@@ -1,5 +1,5 @@
-'use client';
-import { useRef, useEffect } from 'react';
+"use client";
+import { useRef, useEffect } from "react";
 import {
   motion,
   useScroll,
@@ -8,16 +8,16 @@ import {
   useVelocity,
   useAnimationFrame,
   useMotionValue,
-} from 'framer-motion';
-import { wrap } from '@motionone/utils';
-import { cn } from '@/lib/utils';
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
+import { cn } from "@/lib/utils";
 
 interface ParallaxProps {
   children: React.ReactNode;
   baseVelocity: number;
   clasname?: string;
-  scrollDependent?: boolean; 
-  delay?: number; 
+  scrollDependent?: boolean;
+  delay?: number;
 }
 
 export default function ScrollBaseAnimation({
@@ -71,9 +71,9 @@ export default function ScrollBaseAnimation({
   });
 
   return (
-    <div className='overflow-hidden whitespace-nowrap flex flex-nowrap'>
+    <div className="overflow-hidden whitespace-nowrap flex flex-nowrap">
       <motion.div
-        className='flex whitespace-nowrap gap-10 flex-nowrap'
+        className="flex whitespace-nowrap gap-10 flex-nowrap"
         style={{ x }}
       >
         <span className={cn(`block  text-[4vw] lg:text-[2vw]`, clasname)}>{children}</span>
@@ -84,4 +84,3 @@ export default function ScrollBaseAnimation({
     </div>
   );
 }
-

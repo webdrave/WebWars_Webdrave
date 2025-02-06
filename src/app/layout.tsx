@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ICCSAI 2025",
-  description: "International Conference on Cloud Computing and Security Analytics",
+  description:
+    "International Conference on Cloud Computing and Security Analytics",
 };
 
 export default function RootLayout({
