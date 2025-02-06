@@ -85,9 +85,3 @@ export default function ScrollBaseAnimation({
   );
 }
 
-
-const children = () => (
-  <span className={cn(`block text-[3vw]`)}>
-    
-  </span>
-);
