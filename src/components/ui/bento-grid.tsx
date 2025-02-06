@@ -1,11 +1,15 @@
 import { cn } from "@/lib/utils";
 
-export const BentoGrid = ({
-  className,
-  children,
-}: {
+import React from "react";
+
+interface BentoGridProps {
   className?: string;
   children?: React.ReactNode;
+}
+
+export const BentoGrid: React.FC<BentoGridProps> = ({
+  className,
+  children,
 }) => {
   return (
     <div
