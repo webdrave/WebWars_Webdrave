@@ -4,6 +4,7 @@ import Image from "next/image";
 import BentoGridSecondDemo from "../components/bentoDemo";
 import ScrollBaseAnimation from "@/components/ui/ScrollBaseAnimation";
 import ConferenceTopics from "@/components/conferencetopic";
+import KeyHighlights from "@/components/keyHighlights";
 
 export default function Home() {
   return (
@@ -65,6 +66,9 @@ export default function Home() {
 
         <section className="py-16">
           <ConferenceTopics />
+        </section>
+        <section className="-mt-10">
+          <KeyHighlights />
         </section>
       </main>
     </div>
