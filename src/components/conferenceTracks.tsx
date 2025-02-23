@@ -2,6 +2,71 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 
+const tracks = [
+  {
+    title:
+      "Emerging Trends and Applications in Machine Learning and Deep Learning",
+    chairs: [],
+    side: "left",
+  },
+  {
+    title: "Immersive Futures: Merging Realities with Intelligent Systems",
+    chairs: [
+      "Dr. Bhanu Sharma, Chitkara University, Punjab, India",
+      "Dr. Gurjinder Singh, Chitkara University, Punjab, India",
+    ],
+    side: "right",
+  },
+  {
+    title:
+      "Artificial Intelligence and Soft Computing in Power, Energy, Communication, and Security Systems",
+    chairs: [
+      "Dr. Anurag Dwivedi,Bansal Institute of Engineering and Technology, Lucknow, India",
+      "Dr. Suresh Kumar, Institute of Engineering and Design, India",
+    ],
+    side: "left",
+  },
+  {
+    title: "Innovative and Disruptive Technologies",
+    chairs: ["Dr. Amanpreet Kaur, Chitkara University, Punjab, India"],
+    side: "right",
+  },
+  {
+    title: "Recent Trends and Innovations in Generative AI",
+    chairs: [
+      "Dr. Vandana Sharma, Christ University, Delhi-NCR Campus, India",
+      "Dr. Upinder Kaur, Akal University, Talwandi Sabo",
+    ],
+    side: "left",
+  },
+  {
+    title: "Innovative and Disruptive Technologies",
+    chairs: ["Dr. Amanpreet Kaur, Chitkara University, Punjab, India"],
+    side: "right",
+  },
+  {
+    title: "Recent Trends and Innovations in Generative AI",
+    chairs: [
+      "Dr. Vandana Sharma, Christ University, Delhi-NCR Campus, India",
+      "Dr. Upinder Kaur, Akal University, Talwandi Sabo",
+    ],
+    side: "left",
+  },
+  {
+    title: "Innovative and Disruptive Technologies",
+    chairs: ["Dr. Amanpreet Kaur, Chitkara University, Punjab, India"],
+    side: "right",
+  },
+  {
+    title: "Recent Trends and Innovations in Generative AI",
+    chairs: [
+      "Dr. Vandana Sharma, Christ University, Delhi-NCR Campus, India",
+      "Dr. Upinder Kaur, Akal University, Talwandi Sabo",
+    ],
+    side: "left",
+  },
+];
+
 export default function ConferenceTracks() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -12,7 +77,7 @@ export default function ConferenceTracks() {
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div ref={containerRef} className="min-h-screen w-full py-8 sm:py-12 px-4">
+    <div ref={containerRef} className="min-h-screen overflow-hidden w-full py-8 sm:py-12 px-4">
       <div className="mx-auto max-w-6xl space-y-16 sm:space-y-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +94,7 @@ export default function ConferenceTracks() {
           </p>
         </motion.div>
       </div>
-      <div className="flex justify-center items-center mt-16">
+      <div className="relative flex justify-center items-center mt-16">
         <svg
           width="373"
           height="1900"
@@ -60,7 +125,35 @@ export default function ConferenceTracks() {
             </linearGradient>
           </defs>
         </svg>
+        <div className="absolute top-24 sm:top-20 left-1/2 -translate-x-1/2 w-full flex flex-col items-center gap-[3.6rem] lg:gap-[3.7rem]">
+          {tracks.map((track, index) => (
+            <div
+              key={index}
+              className={`relative ${
+                track.side === "left"
+                  ? "-translate-x-[80px] sm:-translate-x-[120px] md:-translate-x-[160px] text-right"
+                  : "translate-x-[80px] sm:translate-x-[120px] md:translate-x-[160px] text-left rotate-180"
+              }`}>
+              <Card text={track.title} side={track.side} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 }
+
+const Card = ({ text, side }: { text: string; side: string }) => {
+  return (
+    <div
+      className={`flex flex-col items-center justify-center bg-[#E9EBEF] rounded-r-full
+      w-[300px] sm:w-[350px] md:w-[450px] lg:w-[512px] h-[138px] py-4 px-6`}>
+      <p
+        className={`text-center text-sm sm:text-base md:text-lg px-4 ${
+          side === "right" ? "rotate-180" : ""
+        }`}>
+        {text}
+      </p>
+    </div>
+  );
+};

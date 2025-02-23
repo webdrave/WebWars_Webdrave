@@ -71,7 +71,7 @@ export default function Home() {
         <section className="-mt-10">
           <KeyHighlights />
         </section>
-        <section className="">
+        <section className="-mt-32">
           <ConferenceTracks />
         </section>
         <section className="h-[50vh] py-16">
