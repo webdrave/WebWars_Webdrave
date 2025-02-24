@@ -6,7 +6,6 @@ import ScrollBaseAnimation from "@/components/ui/ScrollBaseAnimation";
 import ConferenceTopics from "@/components/conferencetopic";
 import KeyHighlights from "@/components/keyHighlights";
 import ConferenceTracks from "@/components/conferenceTracks";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

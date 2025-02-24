@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 import {
   Facebook,
   Twitter,
@@ -17,16 +19,22 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center text-center md:text-left">
             {/* Logos */}
             <div className="flex flex-row w-full md:w-1/2 items-center gap-6 md:gap-14 justify-center mb-6 md:mb-0">
-              <img
-                src="/logo/fGu.png"
-                alt="Logo 1"
-                className="w-24 h-24 md:w-32 md:h-32 rounded-full"
-              />
-              <img
-                src="/logo/fIcc.png"
-                alt="Logo 2"
-                className="w-22 h-24 md:w-30 md:h-32"
-              />
+
+<Image
+  src="/logo/fGu.png"
+  alt="Logo 1"
+  width={100} // Adjust size according to your requirement
+  height={100}
+  className="rounded-full"
+/>
+
+<Image
+  src="/logo/fIcc.png"
+  alt="Logo 2"
+  width={92} // Adjust size accordingly
+  height={100}
+/>
+
             </div>
 
             <div className="w-full md:w-1/2 px-4 md:px-28 flex flex-col gap-6 md:gap-10 items-center md:items-start">
