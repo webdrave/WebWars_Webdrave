@@ -6,7 +6,7 @@ const Page = () => {
       {/* Left side line */}
       <div className="absolute -top-32 min-h-full bottom-0 left-2 md:left-4 lg:left-10 xl:left-20 border-[#C9DCEA] border-l-4 md:border-l-8 w-full"></div>
       
-      <h1 className="text-3xl md:text-5xl font-bold text-center mb-4">Author's Guidelines</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-4">Author&apos;s Guidelines</h1>
       
       <div className="max-w-4xl mx-auto">
         {/* Author's Guidelines */}
@@ -26,10 +26,10 @@ const Page = () => {
         {/* Paper Formatting Guidelines */}
         <div className="bg-white p-4 md:p-6 rounded-2xl shadow-md mt-6 md:mt-8">
           <ul className="list-decimal list-inside text-gray-700 space-y-2 text-sm md:text-base">
-            <li>Paper Size: US Letter (8.5" x 11").</li>
+            <li>Paper Size: US Letter (8.5&quot; x 11&quot;).</li>
             <li>Paper Length: Maximum of 6 pages, including figures, tables, and references. Two additional pages are permitted with a charge of ₹1000 per page (Indian authors) or $50 per page (International authors).</li>
             <li>Formatting: Double-column layout, single-spaced, using 10pt Times New Roman font.</li>
-            <li>Margins: Top: 1" (25 mm) on the title page; 0.75" (19 mm) elsewhere. Left, Right, and Bottom margins: 0.75" (19 mm).</li>
+            <li>Margins: Top: 1&quot; (25 mm) on the title page; 0.75&quot; (19 mm) elsewhere. Left, Right, and Bottom margins: 0.75&quot; (19 mm).</li>
             <li>File Format: PDF, with a maximum size of 5MB. All fonts must be embedded.</li>
             <li>No page numbering should be included in the manuscript.</li>
             <li>Use the IEEE MS Word template provided via the link above for proper formatting.</li>
@@ -49,7 +49,7 @@ const Page = () => {
             <li>All figures, tables, and references must fit within the page limit.</li>
             <li>Papers will be reviewed based on originality, significance, technical quality, and clarity.</li>
             <li>The decision to accept or reject a paper rests with the Technical Program Committee.</li>
-            <li>Accepted papers must address reviewers' comments and meet final submission requirements.</li>
+            <li>Accepted papers must address reviewers&apos; comments and meet final submission requirements.</li>
             <li>The Conference Chair reserves the right to exclude papers not presented or meeting guidelines from the proceedings.</li>
             <li>All submissions should be made via Microsoft CMT.</li>
           </ul>
