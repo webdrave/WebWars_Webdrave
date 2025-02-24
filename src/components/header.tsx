@@ -28,10 +28,10 @@ export default function FloatingNav() {
   const navItems = [
     { name: "Home", link: "/" },
     { name: "Guidelines", link: "/guidelines" },
-    { name: "ICCSAI-2023", link: "/iccsai-2023" },
+    { name: "ICCSAI-2023", link: "https://ieeexplore.ieee.org/xpl/conhome/10420826/proceeding" , newTab: true},
     { name: "Committee", link: "/committee" },
-    { name: "Registrations", link: "/registrations" },
-    { name: "Submit your paper", link: "/submit-paper", special: true },
+    { name: "Registrations", link: "/registration" },
+    { name: "Submit your paper", link: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICCSAI2025", special: true , newTab: true},
   ];
 
   return (
@@ -63,6 +63,7 @@ export default function FloatingNav() {
             <Link
               key={idx}
               href={navItem.link}
+              target={navItem.newTab ? "_blank" : ""}
               className={`px-4 py-2 text-sm font-medium rounded-full transition-all ${
                 navItem.special
                   ? "bg-[#222222] text-white hover:bg-[#212121]"

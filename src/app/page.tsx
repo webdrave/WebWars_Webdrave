@@ -75,10 +75,7 @@ export default function Home() {
         <section className="-mt-32 overflow-hidden">
           <ConferenceTracks />
         </section>
-        <section className="">
-          {/* Add footer here  */}
-          <Footer />
-        </section>
+      
       </main>
     </div>
   );
