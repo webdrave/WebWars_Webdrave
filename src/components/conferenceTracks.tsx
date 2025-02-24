@@ -94,7 +94,7 @@ export default function ConferenceTracks() {
           </p>
         </motion.div>
       </div>
-      <div className="relative flex justify-center items-center mt-16">
+      <div className="relative flex overflow-hidden justify-center items-center mt-16">
         <svg
           width="373"
           height="1900"
