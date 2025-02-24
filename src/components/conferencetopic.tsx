@@ -185,7 +185,7 @@ export default function ConferenceTopics() {
                   }}
                   whileTap={{ scale: 0.95 }}>
                   <motion.div
-                    className="relative h-[80px] flex flex-col justify-center backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 overflow-hidden"
+                    className="relative h-[80px] flex flex-col justify-center backdrop-blur-md rounded-xl p-6 shadow-lg border border-white/20 overflow-hidden bento-grid"
                     whileHover={{
                       boxShadow: "0 8px 32px rgba(0,0,0,0.1)",
                       borderColor: "rgba(255,255,255,0.4)",
@@ -243,6 +243,7 @@ export default function ConferenceTopics() {
                             scale: 1.02,
                             boxShadow: "0 8px 32px rgba(0,0,0,0.1)",
                           }}>
+                          
                           <h3 className="text-center font-medium text-gray-900">
                             {topic}
                           </h3>

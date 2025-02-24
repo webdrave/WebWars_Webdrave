@@ -1,7 +1,19 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
+// import required modules
+import {Autoplay, Pagination, Navigation } from 'swiper/modules';
 export function BentoGridSecondDemo() {
+  
   return (
     <section className="h-screen bg-[#F2F3F2] pt-8 ">
       <BentoGrid className=" mx-auto md:auto-rows-[9rem]">
@@ -19,9 +31,42 @@ export function BentoGridSecondDemo() {
   );
 }
 const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2]"></div>
+  
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl p-0 border border-transparent dark:border-white/[0.2]">
+    <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        grabCursor={true}
+        modules={[Pagination, Navigation,Autoplay]}
+        className="mySwiper w-full h-full rounded-xl"
+      >
+{images.map(image=>{
+      return(
+        <SwiperSlide key={image} className="w-full h-full rounded-xl">
+          <Image src={image} alt="img" key={image} fill className="w-full h-full rounded-xl"></Image>
+          </SwiperSlide>
+        
+      )
+    })}
+      </Swiper>
+    
+  </div>
 );
-
+const images=["/pictures/confSlider1.jpg",
+  "/pictures/confSlider2.webp",
+  "/pictures/confSlider3.webp",
+  "/pictures/confSlider4.webp",
+  "/pictures/confSlider5.webp",
+  "/pictures/confSlider6.webp",
+  "/pictures/confSlider7.webp",]
 const items = [
   {
     title: "ABOUT GALGOTIAS UNIVERSITY",
@@ -31,7 +76,7 @@ const items = [
   },
   {
     header: <Skeleton />,
-    className: "md:col-span-2 md:row-span-3",
+    className: "md:col-span-2 md:row-span-3 p-0 rounded-xl",
   },
   {
     title: "CONFERENCE OBJECTIVE",
