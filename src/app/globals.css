@@ -97,3 +97,9 @@ box-shadow: inset -25px 25px 50px #bbbaba,
     grid-row: span 1.5 / span 1.5;
   }
 }
+
+
+.bento-grid{
+  /* background: #edf2f7; */
+    box-shadow: .4em .4em .8em #99b5d2, -.4em -.4em .8em #fff;
+}
