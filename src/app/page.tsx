@@ -6,6 +6,7 @@ import ScrollBaseAnimation from "@/components/ui/ScrollBaseAnimation";
 import ConferenceTopics from "@/components/conferencetopic";
 import KeyHighlights from "@/components/keyHighlights";
 import ConferenceTracks from "@/components/conferenceTracks";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -65,18 +66,16 @@ export default function Home() {
 
         </ScrollBaseAnimation>
 
-        <section className="py-16">
+        <section className="py-16 overflow-hidden">
           <ConferenceTopics />
         </section>
-        <section className="-mt-10">
+        <section className="-mt-10 overflow-hidden">
           <KeyHighlights />
         </section>
-        <section className="">
+        <section className="-mt-32 overflow-hidden">
           <ConferenceTracks />
         </section>
-        <section className="h-[50vh] py-16">
-          {/* Add footer here  */}
-        </section>
+      
       </main>
     </div>
   );
