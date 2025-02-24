@@ -22,7 +22,8 @@ const tracks = [
       "Artificial Intelligence and Soft Computing in Power, Energy, Communication, and Security Systems",
     chairs: [
       "Dr. Anurag Dwivedi,Bansal Institute of Engineering and Technology, Lucknow, India",
-      "Dr. Suresh Kumar, Institute of Engineering and Design, India",
+      "Dr. Saurabh Kumar,Institute of Engineering and Rural Technology (IERT), Prayagraj, India",
+      "Dr. Punit Kumar Chaubey,Bansal Institute of Engineering and Technology, Lucknow, India"
     ],
     side: "left",
   },
@@ -32,36 +33,46 @@ const tracks = [
     side: "right",
   },
   {
-    title: "Recent Trends and Innovations in Generative AI",
+    title: "The Convergence of Generative AI and Quantum Computing: Unlocking the Next Frontier of Innovation",
     chairs: [
-      "Dr. Vandana Sharma, Christ University, Delhi-NCR Campus, India",
-      "Dr. Upinder Kaur, Akal University, Talwandi Sabo",
+      "Dr. Anitha Julian, Saveetha Engineering College, Tamilnadu India",
+      "Dr. Ramyadevi R,Saveetha Engineering College, Tamilnadu India",
+      "Dr T.Ganesh Kumar,School of Computer Science and Engineering, Galgotias University Greater Noida, India",
+      "Dr Priti Rishi,SRM Institute of science and technology, Vadapalani campus, Chennai, India"
     ],
     side: "left",
   },
   {
-    title: "Innovative and Disruptive Technologies",
-    chairs: ["Dr. Amanpreet Kaur, Chitkara University, Punjab, India"],
+    title: "Federated Learning for Predictive Healthcare Paradigm",
+    chairs: ["Dr. Balamurugan Balasamy,Shiv Nadar University, Delhi-NCR Campus, Noida, India",
+      "Dr. Seema Rawat, Amity University, Uttar Pradesh, Noida, India",
+      "Dr Prithi Samuel,SRM Institute of Science and Technology, Kattankulathur, Chennai, India",
+      "Dr. Firoz Khan, Center for Information & Communication Sciences, Ball state university, USA"
+    ],
     side: "right",
   },
   {
-    title: "Recent Trends and Innovations in Generative AI",
+    title: "Advances in Adversarial and Multi- Source Transfer learning for secure and Robust Modern Healthcare System",
     chairs: [
-      "Dr. Vandana Sharma, Christ University, Delhi-NCR Campus, India",
-      "Dr. Upinder Kaur, Akal University, Talwandi Sabo",
+      "Dr. Ganesh Gopal Devarajan, SRM Institute of Science and Technology, Delhi - NCR Campus, India",
+      "Dr. Rajendra Prasad Mahapatra, SRM Institute of Science and Technology, Delhi - NCR Campus, India",
     ],
     side: "left",
   },
   {
-    title: "Innovative and Disruptive Technologies",
-    chairs: ["Dr. Amanpreet Kaur, Chitkara University, Punjab, India"],
+    title: "Transformation with AI, Deep Learning Breakthroughs and Real World Applications",
+    chairs: ["Dr P Privietha, Sathyabama Institute of Science and Technology,Chennai, TN, India",
+      "Dr T.Ganesh Kumar,School of Computer Science and Engineering, Galgotias University Greater Noida, India",
+      "Dr Shajilin Loret,Francis Xavier Engineering College,Tirunelveli, Tamilnadu, India",
+      "Dr Manish T.I,Department of Computer Science and Engineering,SCMS,School of Engineering and Technology, Kerala"
+    ],
     side: "right",
   },
   {
-    title: "Recent Trends and Innovations in Generative AI",
+    title: "Emerging Trends with Generative AI, Multimodal Federated Intelligence, and XAI transforming the next generation connected technologies",
     chairs: [
-      "Dr. Vandana Sharma, Christ University, Delhi-NCR Campus, India",
-      "Dr. Upinder Kaur, Akal University, Talwandi Sabo",
+      "Dr. Nagresh Kumar, Amity University, India",
+      "Dr. Hemant Kumar Saini, Amity University, India",
     ],
     side: "left",
   },
@@ -77,7 +88,7 @@ export default function ConferenceTracks() {
   const pathLength = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div ref={containerRef} className="min-h-screen overflow-hidden w-full py-8 sm:py-12 px-4">
+    <div ref={containerRef} className="min-h-screen w-full py-8 sm:py-12 px-4">
       <div className="mx-auto max-w-6xl space-y-16 sm:space-y-32">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -94,7 +105,7 @@ export default function ConferenceTracks() {
           </p>
         </motion.div>
       </div>
-      <div className="relative flex overflow-hidden justify-center items-center mt-16">
+      <div className="relative flex  justify-center items-center mt-16">
         <svg
           width="373"
           height="1900"
