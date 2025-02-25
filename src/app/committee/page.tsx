@@ -70,7 +70,7 @@ const sections_data = [
       {
         name: "Prof. Ashok K. Yadav",
         designation: "Galgotias University, Greater Noida, India",
-      }
+      },
     ],
   },
   {
@@ -81,20 +81,237 @@ const sections_data = [
         designation: "Galgotias University, Greater Noida, India",
       },
       {
-        name: "Prof. Ashok K. Yadav",
+        name: "Prof. Deepak Soni",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Sunil Bharti",
+        designation: "GCET, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Conference-Technical-Co-Chairs",
+    facultyData: [
+      {
+        name: "Prof. Ravi Sharma",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Tarun Kumar",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Manish Kumar",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Sonu Jha",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Sunil Kumar",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Conference-Secretaries",
+    facultyData: [
+      {
+        name: "Dr. K.K. Agrawal",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Vipin Rai",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Arunendra Mani Tripathi",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Avneesh Kumar",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "International-Advisory-Chairs",
+    facultyData: [
+      {
+        name: "Prof. Sanjeev K. Singh",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. N. Partheeban",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Publication-Co-Chairs",
+    facultyData: [
+      {
+        name: "Dr. Sachi Mall",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Ajeet Singh",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Publicity-Chairs",
+    facultyData: [
+      {
+        name: "Dr. Ravi Sharma",
         designation: "Galgotias University, Greater Noida, India",
       }
     ],
   },
-];
+  {
+    id: "Publicity-&-Industry-Chairs",
+    facultyData: [
+      {
+        name: "Prof. Vipul Narayan Srivastava",
+        designation: "Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+  {
+    id: "Event-Organising-Chairs",
+    facultyData: [
+      {
+        name: "Dr. Pragya Tewari",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Ambika Gupta",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Pooja Singh",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Finance-Chairs",
+    facultyData: [
+      {
+        name: "Prof. E. Rajesh",
+        designation: "Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+  {
+    id: "Transport-Chairs",
+    facultyData: [
+      {
+        name: "Prof. T. Ganesh Kumar",
+        designation: "Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+  {
+    id: "Website-&-Graphics-Chairs",
+    facultyData: [
+      {
+        name: "Mr. Pankaj Lamba",
+        designation: "Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+  {
+    id: "Media-Chairs",
+    facultyData: [
+      {
+        name: "Prof. AR Pandey",
+        designation: "Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+  {
+    id: "Hospitality-Chairs",
+    facultyData: [
+      {
+        name: "Prof. (Dr.) Rajiv Mishra",
+        designation: "Dean of SOHT, Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Ms. Monalisha Dash",
+        designation: "Associate Professor, Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+  {
+    id: "International-Advisory-Committee",
+    facultyData: [
+      {
+        name: "Dr. Liudong XIng",
+        designation: "Electrical and Computer Engineering Department, University of Massachusetts, Dartmouth",
+      },
+      {
+        name: "Dr. Ling Tok Wang",
+        designation: "Emeritus Professor, Department of Computer Science, National University of Singapore, Singapore",
+      },
+      {
+        name: "Dr. Norjihan Abdul Ghani",
+        designation: "HoD, Department of Information Systems, University of MALAYA, Malaysia",
+        
+      },
+      {
+        name: "Dr. Norbik Bashah Bin Idris",
+        designation: "Professor, IIUM Gombak Campus, Malaysia",
 
+      },
+      {
+        name: "Dr. Maizatul Akmar Ismail",
+        designation: "Department of Information Systems, University of MALAYA, Malaysia",
+
+      },
+      {
+        name: "Dr. Suzan Jabbar Obaiys",
+        designation: "Multimedia Unit, University of MALAYA, Malaysia",
+
+      },
+      {
+        name: "Dr. Mufti Mahmud",
+        designation: "Department of Computer Science, Nottingham Trent University, United Kingdom",
+
+      },
+      {
+        name: "Dr. Deepak K Jain",
+        designation: "Dalian University of Technology, China",
+
+      },
+      {
+        name: "Dr. Kishore Bingi",
+        designation: "Universiti Teknologi PETRONAS, Malaysia",
+
+      },
+      {
+        name: "Dr Noor Zaman Jhanjhi",
+        designation: "Taylor's University, Malaysia",
+
+      },
+      {
+        name: "Dr. Chaman Verma ",
+        designation: "Taylor's University, Malaysia",
+
+      },
+
+    ],
+  },
+];
 
 // Galgotias University, Greater Noida, India
 // Prof. Deepak Soni
 // Galgotias University, Greater Noida, India
 // Prof. Sunil Bharti
 // GCET, Greater Noida, India
-
 
 const sections = [
   { id: "Chief-Patron", label: "CHIEF PATRON" },
@@ -104,6 +321,32 @@ const sections = [
   { id: "Conference-Organizing-Chair", label: "CONFERENCE ORGANIZING CHAIR" },
   { id: "Conference-Technical-Chair", label: "CONFERENCE TECHNICAL CHAIR" },
   { id: "Publication-Chairs", label: "PUBLICATION CHAIRS" },
+  {
+    id: "Conference-Organizing-Co-Chairs",
+    label: "CONFERENCE ORGANIZING CO-CHAIRS",
+  },
+  {
+    id: "Conference-Technical-Co-Chairs",
+    label: "CONFERENCE TECHNICAL CO-CHAIRS",
+  },
+  { id: "Conference-Secretaries", label: "CONFERENCE SECRETARIES" },
+  {
+    id: "International-Advisory-Chairs",
+    label: "INTERNATIONAL ADVISORY CHAIRS",
+  },
+  { id: "Publication-Co-Chairs", label: "PUBLICATION CO-CHAIRS" },
+  { id: "Publicity-Chairs", label: "PUBLICITY CHAIRS" },
+  {
+    id: "Publicity-&-Industry-Chairs",
+    label: "PUBLICITY & INDUSTRY CHAIRS",
+  },
+  { id: "Event-Organising-Chairs", label: "EVENT ORGANISING CHAIRS" },
+  { id: "Finance-Chairs", label: "FINANCE CHAIRS" },
+  { id: "Transport-Chairs", label: "TRANSPORT CHAIRS" },
+  { id: "Website-&-Graphics-Chairs", label: "WEBSITE & GRAPHICS CHAIRS" },
+  { id: "Media-Chairs", label: "MEDIA CHAIRS" },
+  { id: "Hospitality-Chairs", label: "HOSPITALITY CHAIRS" },
+  { id: "International-Advisory-Committee", label: "INTERNATIONAL ADVISORY COMMITTEE" },
 ];
 
 const Page = () => {
@@ -143,7 +386,8 @@ const Page = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="flex justify-center items-center h-24 w-full">
+              className="flex justify-center items-center h-24 w-full"
+            >
               <span className="text-black text-2xl font-bold italic mt-28 whitespace-nowrap transform -rotate-90">
                 {activeSection}
               </span>
@@ -167,7 +411,8 @@ const Page = () => {
             style={{
               background:
                 "linear-gradient(101deg, #F8F9F8 1.3%, #C9DCEA 99.52%)",
-            }}>
+            }}
+          >
             <Image
               src="/assets/persons/sunilSir.jpeg"
               alt="Shri Suneel Galgotia"
@@ -255,7 +500,8 @@ const Section: React.FC<{ id: string; children: React.ReactNode }> = ({
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      viewport={{ once: false, amount: 0.4 }}>
+      viewport={{ once: false, amount: 0.4 }}
+    >
       {children}
     </motion.div>
   );
@@ -271,7 +517,8 @@ const FacultyCard = ({ facultyMembers }: { facultyMembers: any[] }) => {
         className="relative mx-auto max-w-3xl rounded-3xl p-12 shadow-xl"
         style={{
           background: "linear-gradient(101deg, #F8F9F8 1.3%, #C9DCEA 99.52%)",
-        }}>
+        }}
+      >
         <div className="space-y-8">
           {facultyMembers.map((faculty, index) => (
             <div key={index} className="space-y-4 text-center">
@@ -303,7 +550,8 @@ const PersonCard: React.FC<{
         background: "linear-gradient(101deg, #F8F9F8 1.3%, #C9DCEA 99.52%)",
       }}
       whileHover={{ scale: 1.02 }}
-      transition={{ type: "spring", stiffness: 100 }}>
+      transition={{ type: "spring", stiffness: 100 }}
+    >
       <div className="w-48 h-48 mb-10 overflow-hidden rounded-full border-4 border-white shadow-md ">
         <Image
           src={image}
