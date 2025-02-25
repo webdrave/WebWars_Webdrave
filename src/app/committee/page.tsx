@@ -4,10 +4,106 @@ import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+const sections_data = [
+  {
+    id: "Conference-Chair",
+    facultyData: [
+      {
+        name: "DR. AANJEY M. TRIPATHI",
+        designation: "PROFESSOR, GALGOTIAS UNIVERSITY, GREATER NOIDA, INDIA",
+      },
+      {
+        name: "PROF. PRASHANT JOHRI",
+        designation: "GALGOTIAS UNIVERSITY, GREATER NOIDA, INDIA",
+      },
+      {
+        name: "DR. KULDEEP S. KASWAN",
+        designation: "PROFESSOR, GALGOTIAS UNIVERSITY, GREATER NOIDA, INDIA",
+      },
+    ],
+  },
+  {
+    id: "Conference-Organizing-Chair",
+    facultyData: [
+      {
+        name: "Dr. Vimal Kumar",
+        designation: "Professor, Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Gaurav Agarwal",
+        designation: "Professor, Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Abdul Aleem",
+        designation: "Professor, Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Conference-Technical-Chair",
+    facultyData: [
+      {
+        name: "Dr. Suneeta Yadav",
+        designation: "Dean, SCSE, Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. V. Khemchandani",
+        designation: "Dean, SCAT, Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Anurag Singh",
+        designation: "Associate Professor, NIT Delhi, India",
+      },
+      {
+        name: "Dr. Arvind Panwar",
+        designation: "Professor, Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Publication-Chairs",
+    facultyData: [
+      {
+        name: "Prof. Shrddha Sagar",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Ashok K. Yadav",
+        designation: "Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+  {
+    id: "Conference-Organizing-Co-Chairs",
+    facultyData: [
+      {
+        name: "Prof. Meenakshi Awasthi",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Ashok K. Yadav",
+        designation: "Galgotias University, Greater Noida, India",
+      }
+    ],
+  },
+];
+
+
+// Galgotias University, Greater Noida, India
+// Prof. Deepak Soni
+// Galgotias University, Greater Noida, India
+// Prof. Sunil Bharti
+// GCET, Greater Noida, India
+
+
 const sections = [
   { id: "Chief-Patron", label: "CHIEF PATRON" },
   { id: "Patron", label: "PATRON" },
   { id: "Conference-General-Chair", label: "CONFERENCE GENERAL CHAIR" },
+  { id: "Conference-Chair", label: "CONFERENCE CHAIR" },
+  { id: "Conference-Organizing-Chair", label: "CONFERENCE ORGANIZING CHAIR" },
+  { id: "Conference-Technical-Chair", label: "CONFERENCE TECHNICAL CHAIR" },
+  { id: "Publication-Chairs", label: "PUBLICATION CHAIRS" },
 ];
 
 const Page = () => {
@@ -138,6 +234,11 @@ const Page = () => {
           />
         </div>
       </Section>
+      {sections_data.map((section, index) => (
+        <Section id={section.id} key={index}>
+          <FacultyCard facultyMembers={section.facultyData} />
+        </Section>
+      ))}
     </div>
   );
 };
@@ -159,7 +260,35 @@ const Section: React.FC<{ id: string; children: React.ReactNode }> = ({
     </motion.div>
   );
 };
+const FacultyCard = ({ facultyMembers }: { facultyMembers: any[] }) => {
+  return (
+    <div className="relative min-h-[400px] w-full p-8">
+      {/* Checkerboard pattern container */}
+      <div className="absolute inset-0 opacity-90" />
 
+      {/* Content container */}
+      <div
+        className="relative mx-auto max-w-3xl rounded-3xl p-12 shadow-xl"
+        style={{
+          background: "linear-gradient(101deg, #F8F9F8 1.3%, #C9DCEA 99.52%)",
+        }}>
+        <div className="space-y-8">
+          {facultyMembers.map((faculty, index) => (
+            <div key={index} className="space-y-4 text-center">
+              <h2 className="text-2xl font-bold tracking-wide">
+                {faculty.name}
+              </h2>
+              <p className="text-lg tracking-wider">{faculty.designation}</p>
+              {index !== facultyMembers.length - 1 && (
+                <hr className="border-gray-300" />
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 // PersonCard Component
 const PersonCard: React.FC<{
   name: string;
@@ -176,7 +305,13 @@ const PersonCard: React.FC<{
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 100 }}>
       <div className="w-48 h-48 mb-10 overflow-hidden rounded-full border-4 border-white shadow-md ">
-      <Image src={image} alt={name} width={192} height={192} className="w-full h-full object-cover" />
+        <Image
+          src={image}
+          alt={name}
+          width={192}
+          height={192}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="text-center">
         <h2 className="text-xl font-bold mb-2">{name}</h2>
