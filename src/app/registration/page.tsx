@@ -7,14 +7,14 @@ export default function RegistrationPage() {
       <div className="flex-1 container mx-auto px-4 py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Registration Categories</h1>
 
-        <div className="overflow-x-auto rounded-2xl border">
+        <div className="overflow-x-auto shadow-md rounded-2xl border">
           <Table>
-            <TableHeader className="bg-gray-350 font-bold">
-              <TableRow className="divide-x">
-                <TableHead className="bg-muted font-medium text-center ">Registration Type</TableHead>
-                <TableHead className="bg-muted font-medium text-center">Country of registration</TableHead>
-                <TableHead className="bg-muted font-medium text-center">IEEE Member</TableHead>
-                <TableHead className="bg-muted font-medium text-center">Non-IEEE Member</TableHead>
+            <TableHeader className=" ">
+              <TableRow className="bg-gray-200 font-bold divide-x">
+                <TableHead className="font-semibold text-center">Country of registration</TableHead>
+                <TableHead className="font-semibold  text-center">IEEE Member</TableHead>
+                <TableHead className="font-semibold  text-center ">Registration Type</TableHead>
+                <TableHead className="font-semibold  text-center">Non-IEEE Member</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody className="divide-y">
