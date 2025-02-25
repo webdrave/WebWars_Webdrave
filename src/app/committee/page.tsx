@@ -168,7 +168,7 @@ const sections_data = [
       {
         name: "Dr. Ravi Sharma",
         designation: "Galgotias University, Greater Noida, India",
-      }
+      },
     ],
   },
   {
@@ -177,7 +177,7 @@ const sections_data = [
       {
         name: "Prof. Vipul Narayan Srivastava",
         designation: "Galgotias University, Greater Noida, India",
-      }
+      },
     ],
   },
   {
@@ -203,7 +203,7 @@ const sections_data = [
       {
         name: "Prof. E. Rajesh",
         designation: "Galgotias University, Greater Noida, India",
-      }
+      },
     ],
   },
   {
@@ -212,7 +212,7 @@ const sections_data = [
       {
         name: "Prof. T. Ganesh Kumar",
         designation: "Galgotias University, Greater Noida, India",
-      }
+      },
     ],
   },
   {
@@ -221,7 +221,7 @@ const sections_data = [
       {
         name: "Mr. Pankaj Lamba",
         designation: "Galgotias University, Greater Noida, India",
-      }
+      },
     ],
   },
   {
@@ -230,7 +230,7 @@ const sections_data = [
       {
         name: "Prof. AR Pandey",
         designation: "Galgotias University, Greater Noida, India",
-      }
+      },
     ],
   },
   {
@@ -242,8 +242,9 @@ const sections_data = [
       },
       {
         name: "Ms. Monalisha Dash",
-        designation: "Associate Professor, Galgotias University, Greater Noida, India",
-      }
+        designation:
+          "Associate Professor, Galgotias University, Greater Noida, India",
+      },
     ],
   },
   {
@@ -251,58 +252,295 @@ const sections_data = [
     facultyData: [
       {
         name: "Dr. Liudong XIng",
-        designation: "Electrical and Computer Engineering Department, University of Massachusetts, Dartmouth",
+        designation:
+          "Electrical and Computer Engineering Department, University of Massachusetts, Dartmouth",
       },
       {
         name: "Dr. Ling Tok Wang",
-        designation: "Emeritus Professor, Department of Computer Science, National University of Singapore, Singapore",
+        designation:
+          "Emeritus Professor, Department of Computer Science, National University of Singapore, Singapore",
       },
       {
         name: "Dr. Norjihan Abdul Ghani",
-        designation: "HoD, Department of Information Systems, University of MALAYA, Malaysia",
-        
+        designation:
+          "HoD, Department of Information Systems, University of MALAYA, Malaysia",
       },
       {
         name: "Dr. Norbik Bashah Bin Idris",
         designation: "Professor, IIUM Gombak Campus, Malaysia",
-
       },
       {
         name: "Dr. Maizatul Akmar Ismail",
-        designation: "Department of Information Systems, University of MALAYA, Malaysia",
-
+        designation:
+          "Department of Information Systems, University of MALAYA, Malaysia",
       },
       {
         name: "Dr. Suzan Jabbar Obaiys",
         designation: "Multimedia Unit, University of MALAYA, Malaysia",
-
       },
       {
         name: "Dr. Mufti Mahmud",
-        designation: "Department of Computer Science, Nottingham Trent University, United Kingdom",
-
+        designation:
+          "Department of Computer Science, Nottingham Trent University, United Kingdom",
       },
       {
         name: "Dr. Deepak K Jain",
         designation: "Dalian University of Technology, China",
-
       },
       {
         name: "Dr. Kishore Bingi",
         designation: "Universiti Teknologi PETRONAS, Malaysia",
-
       },
       {
-        name: "Dr Noor Zaman Jhanjhi",
+        name: "Dr. Noor Zaman Jhanjhi",
         designation: "Taylor's University, Malaysia",
-
       },
       {
         name: "Dr. Chaman Verma ",
         designation: "Taylor's University, Malaysia",
-
+      },
+      {
+        name: "Dr. Manoj Kumar",
+        designation: "University of Wollongong, Dubai, United Arab Emirates",
+      },
+      {
+        name: "Dr. Schidanand Mohanty",
+        designation: "Singdum University, Serbia",
+      },
+      {
+        name: "Dr. S.B. Goyal",
+        designation:
+          "Director, Faculty of Information Technology, City University, Malaysia",
+      },
+      {
+        name: "Dr. Nagender Aneja",
+        designation:
+          "School of Digital Science, Universiti Brunei Darussalam, Brunei Darussalam",
+      },
+      {
+        name: "Dr. Pradeep Kumar",
+        designation:
+          "Research specialist, UTP Universiti Teknologi PETRONAS, Malaysia",
+      },
+      {
+        name: "Dr. Mukesh Prasad",
+        designation:
+          "School of Computer Science, University of Technology Sydney, Australia",
       },
 
+      {
+        name: "Dr. Gavendra Singh",
+        designation: "Haramaya University, Ethiopia",
+      },
+      {
+        name: "Dr. Hoang Pham",
+        designation: "Professor, Rutgers University, New Jersey, USA",
+      },
+      {
+        name: "Dr. Nitin Kumar Saxena",
+        designation:
+          "Visiting Professor, Electrical and Computer Engineering Department, University of Denver, USA",
+      },
+      {
+        name: "Prof. Utkal Mehta",
+        designation:
+          "Electrical and Electronics Engg., The University of the South Pacific (USP), Laucala Campus, Suva., Fiji",
+      },
+      {
+        name: "Dr. Shafiq UI Rehman",
+        designation:
+          "Singapore University of Technology and Design (SUTD), Singapore",
+      },
+      {
+        name: "Prof. Mohammad Rashid Hussain",
+        designation: "King Khalid University, Abha, Saudi Arabia",
+      },
+      { name: "Prof. Deepak L. Waikar", designation: "Singapore" },
+    ],
+  },
+  {
+    id: "National-Advisory-Committee",
+    facultyData: [
+      {
+        name: "Prof. Adarsh Anand",
+        designation: "University of Delhi, Delhi,India",
+      },
+      {
+        name: "Prof. (Dr.) Chandra Prakash",
+        designation: "National Institute of Technology, Delhi, India",
+      },
+      {
+        name: "Prof. (Dr.) Sahil",
+        designation: "National Institute of Technology, Delhi, India",
+      },
+      {
+        name: "Prof. T. Poongodi",
+        designation: "Danyananda Sagar University, Bangalore, India",
+      },
+      {
+        name: "Prof. Mayank Pandey",
+        designation:
+          "Computer Science and Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. Y.K. Prajapati",
+        designation:
+          "Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. Ela Kumar",
+        designation: "CSE, IGDTUW, Delhi, India",
+      },
+      {
+        name: "Prof. R.K. Nagaria",
+        designation: "ECE,MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. Arvind Pandey",
+        designation: "Director, BIT, Gorakhpur, India",
+      },
+      {
+        name: "Prof. Shashank Srivastava",
+        designation: "BIT, Gorakhpur, India",
+      },
+      {
+        name: "Dr. Dushyant Kumar Singh ",
+        designation:
+          "Associate Professor, Computer Science &  Engg., MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. Nidhi Goel",
+        designation:
+          "Head of Department, Electronics & Communication Engineering, IGDTUW, Delhi, India",
+      },
+      {
+        name: "Prof. S.K. Srivastava",
+        designation:
+          "Professor, Department of Electrical Engineering, MMMUT, Gorakhpur, India",
+      },
+      {
+        name: "Prof. Vandana Niranjan",
+        designation:
+          "Professor, Electronics & Communication Engineering, IGDTUW, Delhi, India",
+      },
+      {
+        name: "Prof. SRN Reddy",
+        designation: "Computer Science and Engineering, IGDTUW, Delhi, India",
+      },
+      {
+        name: "Prof. Bhawna Narwal",
+        designation:
+          "Department of Information Technology, IGDTUW, Delhi,India",
+      },
+      {
+        name: "Dr. Vimal Kumar Singh Yadav",
+        designation:
+          "Department of Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+
+      {
+        name: "Prof. Karuna Kadian ",
+        designation: "Computer Science and Engineering, IGDTUW, Delhi, India",
+      },
+      {
+        name: "Dr. Satish Chandra",
+        designation:
+          "Department of Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. Anil Kumar Sagar",
+        designation: "Sharda University, Greater Noida, India",
+      },
+      {
+        name: "Dr. Savita Yadav",
+        designation: "Netaji Subhas University of Technology, Delhi, India",
+      },
+      {
+        name: "Prof. Anurag Diwedi",
+        designation: "BIET, Lucknow, India",
+      },
+      {
+        name: "Prof. Deependra Rastogi",
+        designation: "IILM University, India",
+      },
+      {
+        name: "Prof. N. Gayathri",
+        designation: "GITAM University, Bengalore, India",
+      },
+      {
+        name: "Prof. S. Rakesh Kumar",
+        designation: "GITAM University, Bengalore, India",
+      },
+      {
+        name: "Prof. Anoop Kumar Patel",
+        designation: "NIT Kurukshetra, India",
+      },
+      {
+        name: "Prof. R.P. Yadav",
+        designation: "Galgotias University, Greater Noida, India",
+      },
+    ],
+  },
+  {
+    id: "Technical-Program-Committee",
+    facultyData: [
+      {
+        name: "Dr. Arvind Kumar",
+        designation: "Electroics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. V. Krishna Rao Kandanvli",
+        designation: "Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. P. Karuppanan",
+        designation: "Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Dr. Dharmendra Dixit",
+        designation: "Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Dr. Deepak Punetha",
+        designation:
+          "Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Dr. Arun Kumar Saurabh",
+        designation:
+          "Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. Navdeep Singh",
+        designation: "Department of Electrical Engineering, MMMUT, Gorakhpur, India",
+      },
+      {
+        name: "Dr. Nirmal Ch Roy",
+        designation: "Electronics and Communication Engineering, MNNIT, Prayagraj, India",
+      },
+      {
+        name: "Prof. Priya Matta",
+        designation: "SM-IEEE, Department of CSE, Tula's Institute, Dehradun, India",
+      },
+      {
+        name: "Prof. Alok Katiyar",
+        designation: "SCSE, Galgotias University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Dilip Yadav",
+        designation:
+          "Bennett University, Greater Noida, India",
+      },
+      {
+        name: "Prof. SPS Chauhan",
+        designation:
+          "Sharda University, Greater Noida, India",
+      },
+      {
+        name: "Prof. Vandana Sharma",
+        designation:
+          "CHRIST University, Greater Noida, India",
+      }
     ],
   },
 ];
@@ -346,7 +584,15 @@ const sections = [
   { id: "Website-&-Graphics-Chairs", label: "WEBSITE & GRAPHICS CHAIRS" },
   { id: "Media-Chairs", label: "MEDIA CHAIRS" },
   { id: "Hospitality-Chairs", label: "HOSPITALITY CHAIRS" },
-  { id: "International-Advisory-Committee", label: "INTERNATIONAL ADVISORY COMMITTEE" },
+  {
+    id: "International-Advisory-Committee",
+    label: "INTERNATIONAL ADVISORY COMMITTEE",
+  },
+  {
+    id: "National-Advisory-Committee",
+    label: "NATIONAL ADVISORY COMMITTEE",
+  },
+  { id: "Technical-Programme-Committee", label: "TECHNICAL PROGRAMME COMMITTEE" },
 ];
 
 const Page = () => {
