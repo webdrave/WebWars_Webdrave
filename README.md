@@ -16,6 +16,30 @@ WebDrave
 - **Abhishek** - Ui/Ux. [LinkedIn](https://www.linkedin.com/in/abhishek-choudhary-bab846132/)
 
 ## 📌 Project Description
+This repository contains the redesigned website for the ICCSAI-2025 International Conference on Communication, Security, and Artificial Intelligence, which will be hosted at Galgotias University in Greater Noida, India. The conference will focus on advancements in Computer and Communication Engineering and cover topics such as Artificial Intelligence, Machine Learning, Deep Learning, Blockchain, and cybersecurity.
+
+---
+
+## 🚀 Features
+- Modern, responsive design using *Next.js* and *Tailwind CSS*
+- Animations powered by *Framer Motion*
+- Component-based architecture with *@radix-ui* and *lucide-react* icons
+- Optimized for performance and accessibility
+- Easily maintainable and scalable codebase
+
+---
+
+## 🛠 Technologies Used
+- *Next.js* (v15.1.6)
+- *React* (v19.0.0)
+- *Tailwind CSS* (v3.4.17) for styling
+- *Framer Motion* for animations
+- *Radix UI* components
+- *TypeScript* for type safety
+- *ESLint* and *Prettier* for code quality
+- *pnpm* as the package manager
+
+---
 
 
 ## 🛠 Setup Instructions
