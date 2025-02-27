@@ -30,7 +30,7 @@ export default function FloatingNav() {
     { name: "Guidelines", link: "/guidelines" },
     { name: "ICCSAI-2023", link: "https://ieeexplore.ieee.org/xpl/conhome/10420826/proceeding" , newTab: true},
     { name: "Committee", link: "/committee" },
-    { name: "Registrations", link: "/registration" },
+    { name: "Speakers", link: "/speakers" },
     { name: "Submit your paper", link: "https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICCSAI2025", special: true , newTab: true},
   ];
 
